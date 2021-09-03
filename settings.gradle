@@ -1,0 +1,8 @@
+include ':push'
+include ':analytics'
+include ':voice'
+include ':scan'
+include ':map'
+include ':location'
+include ':app'
+rootProject.name = "MobileServicesProductFlavors"

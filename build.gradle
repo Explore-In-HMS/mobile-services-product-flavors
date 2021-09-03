@@ -1,0 +1,32 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext.kotlin_version = "1.4.21"
+    repositories {
+        google()
+        jcenter()
+        maven { url 'http://developer.huawei.com/repo/' }
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:4.1.2"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+
+        if(getGradle().getStartParameter().getTaskRequests().toString().toLowerCase().contains("google")) {
+            classpath 'com.google.gms:google-services:4.3.5'
+        }else{
+            classpath 'com.huawei.agconnect:agcp:1.4.2.301'
+        }
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url 'http://developer.huawei.com/repo/' }
+        maven { url "https://jitpack.io" }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

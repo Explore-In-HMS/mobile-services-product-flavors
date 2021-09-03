@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.hms.lib.mobileservicesproductflavors"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application>
+        <!-- HMS Push Service -->
+        <service android:name="com.hms.lib.mobileservicesproductflavors.push.PushKitService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.huawei.push.action.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <meta-data
+            android:name="push_kit_auto_init_enabled"
+            android:value="true" />
+    </application>
+</manifest>

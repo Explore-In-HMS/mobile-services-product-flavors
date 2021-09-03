@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MobileServicesProductFlavors.iml" filepath="$PROJECT_DIR$/.idea/modules/MobileServicesProductFlavors.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/analytics/MobileServicesProductFlavors.analytics.iml" filepath="$PROJECT_DIR$/.idea/modules/analytics/MobileServicesProductFlavors.analytics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MobileServicesProductFlavors.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MobileServicesProductFlavors.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/location/MobileServicesProductFlavors.location.iml" filepath="$PROJECT_DIR$/.idea/modules/location/MobileServicesProductFlavors.location.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/map/MobileServicesProductFlavors.map.iml" filepath="$PROJECT_DIR$/.idea/modules/map/MobileServicesProductFlavors.map.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/push/MobileServicesProductFlavors.push.iml" filepath="$PROJECT_DIR$/.idea/modules/push/MobileServicesProductFlavors.push.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scan/MobileServicesProductFlavors.scan.iml" filepath="$PROJECT_DIR$/.idea/modules/scan/MobileServicesProductFlavors.scan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/voice/MobileServicesProductFlavors.voice.iml" filepath="$PROJECT_DIR$/.idea/modules/voice/MobileServicesProductFlavors.voice.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.hms.lib.mobileservicesproductflavors.map.CommonMapView
+        android:id="@+id/map_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:hms_api_key="@string/hms_api_key"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.hms.lib.mobileservicesproductflavors.map.CommonMapView>
+
+    <SearchView
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/search_view_background"
+        android:searchIcon="@drawable/ic_baseline_search_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </SearchView>
+
+    <ImageView
+        android:id="@+id/barcode_icon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/search_view"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toEndOf="@+id/search_view"
+        app:layout_constraintTop_toTopOf="@+id/search_view"
+        app:srcCompat="@drawable/qr_code_icon"
+        app:tint="@android:color/white" />
+
+    <TextView
+        android:id="@+id/notification_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/search_view_background"
+        android:gravity="center_vertical"
+        android:paddingStart="12dp"
+        android:text="@string/notification_status_text"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/notification_toggle_button"
+        app:layout_constraintEnd_toEndOf="@+id/notification_toggle_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_view" />
+
+    <ToggleButton
+        android:id="@+id/notification_toggle_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:textOff="@string/notification_status_off_text"
+        android:textOn="@string/notification_status_on_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_view" />
+
+    <View
+        android:id="@+id/split_view"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/microphone_icon"
+        app:layout_constraintEnd_toEndOf="@+id/barcode_icon"
+        app:layout_constraintEnd_toStartOf="@+id/barcode_icon"
+        app:layout_constraintTop_toTopOf="@+id/microphone_icon" />
+
+    <ImageView
+        android:id="@+id/microphone_icon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/search_view"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toStartOf="@+id/split_view"
+        app:layout_constraintTop_toTopOf="@+id/search_view"
+        app:srcCompat="@drawable/microphone_icon"
+        app:tint="@android:color/white" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cities_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/recycler_view_background"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_view"
+        tools:listitem="@layout/search_city_item_list" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

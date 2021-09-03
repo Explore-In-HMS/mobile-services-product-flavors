@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Mobile Services Product Flavors</string>
+    <string name="take_picture">Take Picture</string>
+    <string name="select_image">Select Image</string>
+    <string name="cancel">Cancel</string>
+    <string name="select_image_option_title">Choose a picture.</string>
+    <string name="select_image_option_content">Which method would you like to choose a picture for scanning.</string>
+
+    <string name="notification_topic">notificationTopic</string>
+    <string name="hms_api_key">your_api_key</string>
+    <string name="speech_to_text_language_key">en-US</string>
+    <string name="notification_status_text">Notification subscription status</string>
+    <string name="notification_status_on_text">ON</string>
+    <string name="notification_status_off_text">OFF</string>
+</resources>
